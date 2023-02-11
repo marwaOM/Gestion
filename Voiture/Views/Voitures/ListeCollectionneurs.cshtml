@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Liste des collectionneurs";
+}
+<h2>Liste des collectionneurs</h2>
+<ul>
+    @for (int i = (int)ViewData["annee"]; i <= DateTime.Now.Year - 20; i++)
+    {
+        <li>de <b>@ViewData["marque"]</b> année @i</li>
+    }
+</ul>
